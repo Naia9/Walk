@@ -4,3 +4,5 @@ E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\bin\De
 E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\obj\Debug\MatrixWalk.csprojResolveAssemblyReference.cache
 E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\obj\Debug\MatrixWalk.exe
 E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\obj\Debug\MatrixWalk.pdb
+E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\bin\Debug\log4net.dll
+E:\Telerik Academy\КПК\DevelopmentTools\Rep\Walk\MatrixWalk\MatrixWalk\bin\Debug\log4net.xml
