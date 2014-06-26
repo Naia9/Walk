@@ -3,6 +3,10 @@
     using System;
     using System.Linq;
 
+    /// <summary>
+    /// This class represents a matrix that for the current task has to be square. 
+    /// </summary>
+    
     public class Matrix
     {
         private int[,] matrixValues;
@@ -16,6 +20,11 @@
             this.MatrixValues = new int[countOfRows, countOfRows];
         }
 
+
+        /// <summary>
+        /// The two dimensional int array that holds the values of the current matrix.
+        /// </summary>
+       
         public int[,] MatrixValues
         {
             get
@@ -30,6 +39,10 @@
                 this.matrixValues = value;
             }
         }
+
+        /// <summary>
+        /// The number of rows in the matrix.
+        /// </summary>
 
         public int RowCount
         {
@@ -49,6 +62,10 @@
             }
         }
 
+        /// <summary>
+        /// The number of columns in the matrix- for the current task the number of rows and the number of columns are the same.
+        /// </summary>
+
         public int ColCount
         {
             get
@@ -66,6 +83,12 @@
                 this.colCount = value;
             }
         }
+
+        /// <summary>
+        /// This method sets the value of an individual cell in the array of values.
+        /// </summary>
+        /// <param name="currentPosition">Position of the current cell- a position has row and column number.</param>
+        /// <param name="currentValue">The value to set to the current cell- it must be between 1 and the squared value of the row count.</param>
 
         public void UpdateSeparateValue(Position currentPosition, int currentValue)
         {
@@ -90,13 +113,21 @@
             {
                 throw new ArgumentException(string.Format("Col of the given position ({0}), is outside of the matrix range- 0 to {1}", currentCol, this.ColCount));
             }
-            else if (currentValue < 0 || currentValue > Math.Pow(this.RowCount, 2))
+            else if (currentValue < 1 || currentValue > Math.Pow(this.RowCount, 2))
             {
                 throw new ArgumentException(string.Format("The given value ({0}) , is outside of the range of values for this matrix- 1 to {1}", currentValue, Math.Pow(this.RowCount, 2)));
             }
 
             this.matrixValues[currentRow, currentCol] = currentValue;
         }
+
+
+        /// <summary>
+        /// This is a method that makes a deep copy of a given array, in the current class used to make a deep copy of the matrix values, so that
+        /// the array of values isn't returned directly and its manipulation is accessible only via the UpdateSeparateValue method. 
+        /// </summary>
+        /// <param name="valuesOfMatrix">The array to clone.</param>
+        /// <returns>The copy array.</returns>
 
         private int[,] MakeDeepCopyOfValues(int[,] valuesOfMatrix)
         {
