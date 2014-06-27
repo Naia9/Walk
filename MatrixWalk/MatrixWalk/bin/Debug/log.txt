@@ -8,3 +8,5 @@ ERROR - Some error.
 WARN - Some warning.
 ERROR - Some error.
 WARN - Some warning.
+ERROR - Some error.
+WARN - Some warning.

@@ -13,13 +13,18 @@
         private int rowCount;
         private int colCount;
 
+        /// <summary>
+        /// Create a matrix by given count of rows. For the current task the matrix has to be square, so the count of rows is the same as
+        /// the count of columns.
+        /// </summary>
+        /// <param name="countOfRows">Size of the matrix.</param>
+
         public Matrix(int countOfRows)
         {
             this.RowCount = countOfRows;
             this.ColCount = countOfRows;
             this.MatrixValues = new int[countOfRows, countOfRows];
         }
-
 
         /// <summary>
         /// The two dimensional int array that holds the values of the current matrix.

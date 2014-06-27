@@ -1,5 +1,9 @@
 ﻿namespace MatrixWalk
 {
+    /// <summary>
+    /// This namespace contains classes to solve the Walk in matrix problem.
+    /// </summary>
+    /// 
     using System;
     using System.Linq;
     using log4net;
